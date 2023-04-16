@@ -1,0 +1,75 @@
+
+/* removing :default body margin and padding  */
+
+*{
+    margin: 0 px;
+    padding: 0 px;
+}
+
+.flex-item-left {
+    flex: 50%;
+  }
+  
+  .flex-item-right {
+    flex: 50%;
+  }
+
+  /* Responsive layout - makes a one column layout (100%) instead of a two-column layout (50%) */
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .div1, .div2 ,.outer{
+      width: 20%;
+      height: 320px;
+    }
+   }
+
+.outer{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content:space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction:column;
+    align-items: center;
+    
+
+}
+
+div.div1{
+    border: 2px solid black;
+    text-align: center;
+    
+    flex-direction: column;
+    width: 30%;
+    flex-wrap: wrap;
+
+
+}
+
+
+
+
+div.div2{
+    border: 2px solid black;
+    text-align: center;
+    width: 40%;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+/* 
+/* /giving css to the text   */
+
+.text{
+    border: 2px solid black;
+    color: rgb(241, 242, 241);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 8px;
+    background: rgb(16, 6, 6);
+    animation: text infinite 4s; 
+    backface-visibility: hidden;
+} 
+
+#id2{
+    font-size: 60px;
+}
